@@ -3,9 +3,11 @@ export default [
   {
     path: '/',
     component: '@/layouts/index',
+    name: '一级',
+    // hideChildrenInMenu: true,
     // 子路由
     routes: [
-      { path: 'user', component: '@/pages/User' },
+      { path: 'user', component: '@/pages/User', name: '二级', hideInMenu: false, access: 'isAdmin' },
     ]
   }
 ]
