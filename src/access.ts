@@ -2,6 +2,11 @@
 export default function (initialState: API.IUser) {
   console.log(initialState)
   return {
-    isAdmin: initialState.role.isAdmin
+    isAdmin: initialState.role.isAdmin,
+    isUser: (route: any) => {
+      console.log(route)
+      return route.path === '/'
+    },
+    isAAA: true
   }
 }

@@ -1,5 +1,5 @@
 /**
- * umi 插件
+ * umi 插件 全局的
  * @returns
  */
 export async function getInitialState(): Promise<API.IUser> {

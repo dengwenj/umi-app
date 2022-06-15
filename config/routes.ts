@@ -1,9 +1,10 @@
 export default [
-  { path: '/', component: '@/pages/index' },
+  { path: '/', component: '@/pages/index', access: 'isAAA' },
   {
     path: '/',
     component: '@/layouts/index',
     name: '一级',
+    access: 'isUser',
     // hideChildrenInMenu: true,
     // 子路由
     routes: [
